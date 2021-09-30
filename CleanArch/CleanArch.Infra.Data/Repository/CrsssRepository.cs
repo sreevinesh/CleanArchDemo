@@ -16,6 +16,13 @@ namespace CleanArch.Infra.Data.Repository
         {
             _ctx = ctx;
         }
+
+        public void Add(Crsss crsss)
+        {
+            _ctx.Crsss.Add(crsss);
+            _ctx.SaveChanges();
+        }
+
         public IEnumerable<Crsss> GetCrssses()
         {
             return _ctx.Crsss;

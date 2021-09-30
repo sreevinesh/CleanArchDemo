@@ -10,5 +10,6 @@ namespace CleanArch.Domain.Interfaces
     public interface ICrsssRepository
     {
         IEnumerable<Crsss> GetCrssses();
+        void Add(Crsss crsss);
     }
 }
