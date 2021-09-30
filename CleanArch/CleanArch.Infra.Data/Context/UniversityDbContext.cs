@@ -8,12 +8,17 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infra.Data.Context
 {
-    public class UniversityDbContext :DbContext
+    public class UniversityDbContext : DbContext
     {
-        public UniversityDbContext(DbContextOptions options) : base(options)
-        {
-        }
+       
+         public UniversityDbContext(DbContextOptions options) : base(options)
+         {
+         }
+        
+        public DbSet<Crsss> Crsss { get; set; }
+        public DbSet<Courses> Courses { get; set; }
+       
 
-        public DbSet<Course> Courses { get; set; }
+
     }
 }

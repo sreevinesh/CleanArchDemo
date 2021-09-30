@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infra.Data.Repository
 {
-    public class CourseRepository : ICourseRepository
+    public class CrsssRepository : ICrsssRepository
     {
         private UniversityDbContext _ctx;
-        public CourseRepository(UniversityDbContext ctx)
+        public CrsssRepository(UniversityDbContext ctx)
         {
             _ctx = ctx;
         }
-        public IEnumerable<Courses> GetCourses()
+        public IEnumerable<Crsss> GetCrssses()
         {
-            return _ctx.Courses;
+            return _ctx.Crsss;
         }
     }
 }

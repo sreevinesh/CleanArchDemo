@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArch.Application.ViewModels
+namespace CleanArch.Domain.Interfaces
 {
-    public class CourseViewModel
+    public interface ICrsssRepository
     {
-        public IEnumerable<Courses> Courses { get; set; }
+        IEnumerable<Crsss> GetCrssses();
     }
 }

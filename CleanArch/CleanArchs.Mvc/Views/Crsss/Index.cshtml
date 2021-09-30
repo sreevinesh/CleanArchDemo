@@ -1,0 +1,15 @@
+﻿@model CleanArch.Application.ViewModels.CrsssViewModel
+
+<div class="container body-content">
+    <div class="row crsss-content">
+        @foreach (var crsss in Model.Crsss)
+        {
+            <div class="crsss-image-container">
+                <div class="crsss-image" style="background-image:url(@crsss.ImageUrl)"> </div>
+            </div>
+
+            <span>@crsss.Name</span>
+        }
+
+    </div>
+</div>
