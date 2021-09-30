@@ -10,5 +10,6 @@ namespace CleanArch.Application.Interfaces
     public interface ICrsssService
     {
         CrsssViewModel GetCrssses();
+        void Create(CrsssViewModel crsssViewModel);
     }
 }
